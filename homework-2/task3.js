@@ -14,20 +14,20 @@
 // console.log(findLongestWord('May the force be with you')); // 'force'
 
 
-// const findLongestWord = (str) => {
+const findLongestWord = (str) => {
 
-//     const newArr = str.trim().split(' ');
-//     let theLongestWord = ''
+    const newArr = str.trim().split(' ');
+    let theLongestWord = ''
 
-//     for (const item of newArr) {
-//         if (item.length > theLongestWord.length) {
-//             theLongestWord = item
-//         }
+    for (const item of newArr) {
+        if (item.length > theLongestWord.length) {
+            theLongestWord = item
+        }
 
-//     }
-//     return theLongestWord
-// }
+    }
+    return theLongestWord
+}
 
-// console.log(findLongestWord('The quick brown fox jumped over the lazy dog'))
-// console.log(findLongestWord('Google do a roll')) 
-// console.log(findLongestWord('May the force be with you'))
+console.log(findLongestWord('The quick brown fox jumped over the lazy dog'))
+console.log(findLongestWord('Google do a roll')) 
+console.log(findLongestWord('May the force be with you'))
