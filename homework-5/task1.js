@@ -17,16 +17,16 @@
 // // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
 
-// import users from "./users.js"
+import users from "./users.js"
 
-// const getUserNames = (users) => {
-//     let res = users.map(({name}) => {
-//         return name;
-//     });
+const getUserNames = (users) => {
+    let res = users.map(({name}) => {
+        return name;
+    });
     
-//     console.log(res);
-// };
+    console.log(res);
+};
 
   
-// console.log(getUserNames(users));
-// // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
+console.log(getUserNames(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]

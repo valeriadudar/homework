@@ -84,4 +84,4 @@ export default [
     gender: 'female',
     age: 39,
   },
-]; (edited) 
+];
