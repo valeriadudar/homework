@@ -46,47 +46,65 @@
 //   });
 // };
 
+// const storage = new Storage([
+//   "Нанітоіди",
+//   "Пролонгер",
+//   "Залізні жупи",
+//   "Антигравітатор",
+// ]);
+
+// const items = storage.getItems();
+// console.table(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
+
+// storage.addItem("Дроїд");
+// console.table(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
+
+// storage.removeItem("Пролонгер");
+// console.table(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
+
 // ================================
 
 // ES6 Classes
 
-// class Storage {
-//   constructor(items) {
-//     this.items = items;
-//   }
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
 
-//   getItems() {
-//     return this.items;
-//   }
+  getItems() {
+    return this.items;
+  }
 
-//   addItem(newItem) {
-//     this.items.push(newItem);
-//   }
+  addItem(newItem) {
+    this.items.push(newItem);
+  }
 
-//   removeItem(itemToDelete) {
-//     this.items.forEach((item, idx) => {
-//       if (item === itemToDelete) {
-//         this.items.splice(idx, 1);
-//       }
-//     });
-//   }
-// }
+  removeItem(itemToDelete) {
+    this.items.forEach((item, idx) => {
+      if (item === itemToDelete) {
+        this.items.splice(idx, 1);
+      }
+    });
+  }
+}
+
+
+const storage = new Storage([
+  "Нанітоіди",
+  "Пролонгер",
+  "Залізні жупи",
+  "Антигравітатор",
+]);
+
+const items = storage.getItems();
+console.table(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
+
+storage.addItem("Дроїд");
+console.table(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
+
+storage.removeItem("Пролонгер");
+console.table(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
+
 
 // ================================
 
-const storage = new Storage([
-    "Нанітоіди",
-    "Пролонгер",
-    "Залізні жупи",
-    "Антигравітатор",
-  ]);
-  
-  const items = storage.getItems();
-  console.table(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
-  
-  storage.addItem("Дроїд");
-  console.table(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
-  
-  storage.removeItem("Пролонгер");
-  console.table(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
-  

@@ -47,7 +47,23 @@
 //   this._value = String(newItem) + this.value + String(newItem);
 // };
 
+// const builder = new StringBuilder(".");
+// console.log(builder);
 
+// console.log(builder.value);
+// // console.log(builder.value());
+// // builder.append = "^";
+// builder.append("^");
+// console.log(builder.value); // '.^'
+// // console.log(builder.value());
+
+// // builder.prepend = "^";
+// builder.prepend("^");
+// console.log(builder.value); // '^.^'
+
+// // builder.pad = "=";
+// builder.pad("=");
+// console.log(builder.value); // '=^.^='
 // ============================
 
 // ES6 Classes
@@ -99,9 +115,6 @@ class StringBuilder {
     this._value = String(newItem) + this.value + String(newItem);
   }
 }
-
-// ============================
-
 const builder = new StringBuilder(".");
 console.log(builder);
 
@@ -119,3 +132,6 @@ console.log(builder.value); // '^.^'
 // builder.pad = "=";
 builder.pad("=");
 console.log(builder.value); // '=^.^='
+
+// ============================
+

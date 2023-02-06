@@ -79,16 +79,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 // ===============================
 // ES5 Classes
 
@@ -145,6 +135,28 @@
 //     this.distance += hours * this.speed;
 //   }
 // };
+
+// check the ES5 classes
+
+// const mustang5 = new Car({ maxSpeed: 200, price: 2000 });
+
+// mustang5.turnOn();
+// mustang5.accelerate(50);
+// mustang5.drive(2);
+
+// mustang5.getSpecs();
+// // maxSpeed: 200, speed: 50, isOn: true, distance: 100, price: 2000
+
+// mustang5.decelerate(20);
+// mustang5.drive(1);
+// mustang5.turnOff();
+
+// mustang5.getSpecs();
+// // maxSpeed: 200, speed: 0, isOn: false, distance: 130, price: 2000
+
+// console.log(mustang5.price); // 2000
+// mustang5.newPrice(4000);
+// console.log(mustang5.price); // 4000
 
 // ================================
 // ES6 Classes
