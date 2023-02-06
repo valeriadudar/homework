@@ -54,51 +54,51 @@
 
 // using getters/setters
 
-// class StringBuilder {
-//   constructor(_value) {
-//     this._value = _value;
-//   }
+class StringBuilder {
+  constructor(_value) {
+    this._value = _value;
+  }
 
-//   get value() {
-//     return this._value;
-//   }
+  get value() {
+    return this._value;
+  }
 
-//   set append(newItem) {
-//     this._value += String(newItem);
-//   }
+  set append(newItem) {
+    this._value += String(newItem);
+  }
 
-//   set prepend(newItem) {
-//     this._value = String(newItem) + this.value;
-//   }
+  set prepend(newItem) {
+    this._value = String(newItem) + this.value;
+  }
 
-//   set pad(element) {
-//     this._value = String(element) + this.value + String(element);
-//   }
-// }
+  set pad(element) {
+    this._value = String(element) + this.value + String(element);
+  }
+}
 
-// common
+common
 
-// class StringBuilder {
-//   constructor(_value) {
-//     this._value = _value;
-//   }
+class StringBuilder {
+  constructor(_value) {
+    this._value = _value;
+  }
 
-//   get value() {
-//     return this._value;
-//   }
+  get value() {
+    return this._value;
+  }
 
-//   append(newItem) {
-//     this._value += String(newItem);
-//   }
+  append(newItem) {
+    this._value += String(newItem);
+  }
 
-//   prepend(newItem) {
-//     this._value = String(newItem) + this.value;
-//   }
+  prepend(newItem) {
+    this._value = String(newItem) + this.value;
+  }
 
-//   pad(newItem) {
-//     this._value = String(newItem) + this.value + String(newItem);
-//   }
-// }
+  pad(newItem) {
+    this._value = String(newItem) + this.value + String(newItem);
+  }
+}
 
 // ============================
 
